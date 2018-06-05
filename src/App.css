@@ -1,0 +1,27 @@
+.button__container {
+  margin-top: 5px;
+  text-align: centert;
+  background-color: lightgray;
+  width: 80%;
+  margin-left: 10%;
+}
+.button {
+  background-color:green;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 40px;
+  width: 200px;
+}
+.conversation__intro {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+.conversation__intro_links {
+  font-size: 10px;
+  width: 100%;
+  text-align: center;
+  color: blue;
+  border: lightcoral;
+}

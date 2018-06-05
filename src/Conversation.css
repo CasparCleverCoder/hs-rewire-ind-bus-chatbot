@@ -1,0 +1,30 @@
+.conversation {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  padding: 1rem;
+  width: 80%; }
+  .conversation__inner {
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    height: auto; }
+  .conversation__messages {
+    overflow-y: auto;
+    flex: 1; }
+  .conversation__input-container {
+    width: 100%; }
+  .conversation__input {
+    border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
+    font-size: 16px;
+    width: 90%; 
+    height: 50px;
+    color: black;
+    border: 5px solid darkgray;
+    background: lightgrey;}
