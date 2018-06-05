@@ -32,7 +32,8 @@ You can copy the code of the Functions from the actions directory Parameters of 
 
 10. Deploy this REACT Application direct to Bluemix
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=<git_repository_URL>&branch=<git_branch>)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/HartmutSeitter/hs-rewire-ind-bus-chatbot&branch=<git_branch>)
+
 
 ## Important - Before you run the build process you have to specify
 In the creadet toolchain selet the GIT box
