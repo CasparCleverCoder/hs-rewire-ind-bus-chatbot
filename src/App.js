@@ -27,12 +27,12 @@ class App extends Component {
   }
 
   callWatson(message) {
-    /*** */
-    //
-    // here you have to specify the RESTAPI End point of your Function to invoke Watson Assistant
-    //
-    /*** */
-    const watsonApiUrl = "https://openwhisk.eu-gb.bluemix.net/api/v1/web/bcw2018_dev/rewire-ind-bus/hs-seq1.json";
+      /*** */
+      //
+      // here you have to specify the RESTAPI End point of your Function to invoke Watson Assistant
+      //
+      /*** */
+    const watsonApiUrl = "put here your IBM Function sequence Endpoint address";
     
     const requestJson = JSON.stringify({
       input: {

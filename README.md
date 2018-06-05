@@ -23,14 +23,41 @@ You can copy the code of the Functions from the actions directory Parameters of 
 4. Using the IBM Watson Launch tool, define Intents, Utterances and Dialogs and test the conversation.
 
 5. Create an IBM Function to invoke the Watson Assistant via NodeJS API call
-5a. Copy the javascript code from Github and create a new Function and specify the paramter of username, password and ws-id in the parameter section of the Action
-5b. Define a IBM Function Sequence and invoke the Action
-5c. Web enable the Sequence you created - save the url for later usage
+6. Copy the javascript code from Github and create a new Function and specify the paramter of username, password and ws-id in the parameter section of the Action
+7. Define a IBM Function Sequence and invoke the Action
+8. Web enable the Sequence you created - save the url for later usage
 
 ## Using a REACT App as a front end application
 
-6. A sample REACT Application
+9. Deploy this REACT Application direct to Bluemix
 
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=<git_repository_URL>&branch=<git_branch>)
+
+## Important - Before you run the build process you have to specify 
+In the creadet toolchain selet the GIT box
+select the src folder
+open the App.js file in the editor and specify the correct Endpoint address into the const watsonApiUrl
+
+
+```
+  callWatson(message) {
+    /*** */
+    //
+    // here you have to specify the RESTAPI End point of your Function to invoke Watson Assistant
+    //
+    /*** */
+    const watsonApiUrl = "put here your IBM Function sequence Endpoint address";
+
+```
+
+
+A DevOps toolchain will be created and you have to specify the following deployment scripts
+
+## Build script
+
+Spceify npm in the builder type
+Specify build in the 'build archive directory'
+Copy this code into the build script box
 
 ```
 #Set up required version of Node and NPM
@@ -52,7 +79,9 @@ npm install && npm install watson-react-components && npm run build
 ```
 7. Set Build archive directory to build
 
-8. In the Deploy stage specfie the deploy config appropriate and use the following Deploy Script
+8. In the Deploy stage specify the deploy config appropriate and use the following Deploy Script
+
+Copy this code into the deployment script box
 ```
 #!/bin/bash
 # Push app
@@ -80,4 +109,3 @@ export CF_APP_NAME="$CF_APP"
 export APP_URL=http://$(cf app $CF_APP_NAME | grep urls: | awk '{print $2}')
 ```
 #Run the Build and Deploy Process and the app should be deployed to the IBM Cloud env. you specified in the Deploy Config
-# hs-rewire-ind-bus-chatbot
