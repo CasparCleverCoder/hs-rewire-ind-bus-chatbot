@@ -24,16 +24,17 @@ You can copy the code of the Functions from the actions directory Parameters of 
 
 5. Create an IBM Function to invoke the Watson Assistant via NodeJS API call
 6. Copy the javascript code from Github and create a new Function and specify the paramter of username, password and ws-id in the parameter section of the Action
-7. Define a IBM Function Sequence and invoke the Action
-8. Web enable the Sequence you created - save the url for later usage
+7. Make sure to use NodeJS 6 as the runtime for the Function
+8. Define a IBM Function Sequence and invoke the Action
+9. Web enable the Sequence you created - save the url for later usage
 
 ## Using a REACT App as a front end application
 
-9. Deploy this REACT Application direct to Bluemix
+10. Deploy this REACT Application direct to Bluemix
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=<git_repository_URL>&branch=<git_branch>)
 
-## Important - Before you run the build process you have to specify 
+## Important - Before you run the build process you have to specify
 In the creadet toolchain selet the GIT box
 select the src folder
 open the App.js file in the editor and specify the correct Endpoint address into the const watsonApiUrl

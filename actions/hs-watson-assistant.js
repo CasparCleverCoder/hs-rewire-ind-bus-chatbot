@@ -12,7 +12,7 @@
   * @return {object} the JSON of Conversation's response.
   *
   */
- onst watson = require('watson-developer-cloud');
+ const watson = require('watson-developer-cloud');
  
  function main(params) {
    return new Promise(function(resolve, reject){
